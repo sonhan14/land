@@ -805,9 +805,8 @@ const Map = forwardRef(
         };
 
         const fetchBoundData = async (lat, lng) => {
-
             try {
-                const response = await axios.get('/api/get-bound-2', {
+                const response = await axios.get('https://guland.vn/get-bound-2', {
                     params: {
                         marker_lat: lat,
                         marker_lng: lng,
@@ -815,13 +814,13 @@ const Map = forwardRef(
                     headers: {
                         'User-Agent': userAgent,
                     },
-                })
-
+                });
                 return response.data;
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         };
+
 
         const MapEventArea = () => {
             useMapEvents({
