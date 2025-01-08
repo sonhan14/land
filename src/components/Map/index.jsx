@@ -619,7 +619,7 @@ const Map = forwardRef(
         useEffect(() => {
             console.log('user0', userAgent);
 
-        }, []);
+        }, [userAgent]);
 
         // Debounce the function to avoid calling it too frequently
 
@@ -832,11 +832,11 @@ const Map = forwardRef(
 
                     console.log([newLocation.lat, newLocation.lng]);
 
-                    const res = await getAreaLocation(newLocation.lat, newLocation.lng);
+                    // const res = await getAreaLocation(newLocation.lat, newLocation.lng);
 
                     const newRes = await fetchBoundData(newLocation.lat, newLocation.lng);
 
-                    console.log(res);
+                    // console.log(res);
 
                     console.log("new Res", newRes);
 
@@ -866,10 +866,10 @@ const Map = forwardRef(
                                 });
                             }
                         });
-                        const convertedCoords = res.points.map((point) => [point.lng, point.lat]);
+                        const convertedCoords = newRes.points.map((point) => [point.lng, point.lat]);
                         const geoJsonPolygon = turf.polygon([convertedCoords]);
                         const center = turf.center(geoJsonPolygon).geometry.coordinates;
-                        const area = res.address.split('Diện tích: ')[1];
+                        const area = newRes.address.split('Diện tích: ')[1];
                         const icon = L.divIcon({
                             className: 'custom-icon-distance',
                             html: `<div style="color: black;">
@@ -881,7 +881,7 @@ const Map = forwardRef(
                         const middleLatLng = L.latLng(center[1], center[0]);
                         const newPolygonArea = {
                             polygon,
-                            address: res.address,
+                            address: newRes.address,
                             distances: newDistances,
                             area: (
                                 <Marker position={middleLatLng} icon={icon}>
