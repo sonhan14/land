@@ -812,9 +812,9 @@ const Map = forwardRef(
                         marker_lat: lat,
                         marker_lng: lng,
                     },
-                    // headers: {
-                    //     'User-Agent': userAgent,
-                    // },
+                    headers: {
+                        'User-Agent': userAgent,
+                    },
                 })
 
                 return response.data;
