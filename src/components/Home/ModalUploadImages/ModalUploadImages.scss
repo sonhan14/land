@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.ant-modal-title {
+    font-size: 20px !important;
+    font-weight: 600;
+}
+.custom-modal-upload {
+    z-index: 10000;
+}
+.text-tutorial {
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.input-image {
+    display: flex;
+    margin-bottom: 20px;
+}
+.text-error {
+    color: red;
+}
+.list-image {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+}

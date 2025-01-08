@@ -1,0 +1,207 @@
+.upgrade-container {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.upgrade-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.accent-text {
+    color: #4caf50;
+}
+
+.col {
+    display: flex;
+    gap: 30px;
+}
+
+.upgrade-description-container {
+    flex: 2;
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feature-item {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.package-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.package {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 60px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.package:hover {
+    transform: scale(1.05);
+}
+
+.package-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.vip-button {
+    background-color: #000000;
+    color: #00ff00;
+    border: none;
+    padding: 8px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.vip-button.disabled {
+    pointer-events: none;
+}
+
+.vip-button:hover {
+    background-color: #333333;
+}
+
+.vip-button.disabled:hover {
+    pointer-events: none;
+    background-color: unset;
+    opacity: 0.8;
+}
+
+.package-green {
+    background-color: #4caf50;
+}
+
+.package-red {
+    background-color: #f44336;
+}
+
+.package-blue {
+    background-color: #03a9f4;
+}
+
+.package-purple {
+    background-color: #9c27b0;
+}
+.land {
+    color: red;
+    font-weight: bold;
+}
+
+.invest {
+    color: #19c719;
+    font-weight: bold;
+}
+
+.vip-upgrade {
+    padding: 18px 4px;
+}
+
+.vip-upgrade-message {
+}
+
+.vip-upgrade-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.vip-upgrade-checkout {
+    display: flex;
+    justify-content: flex-end;
+}
+.vip-upgrade-locked {
+    padding: 18px 4px;
+}
+.vip-upgrade-locked-message {
+    text-align: center;
+    display: block;
+}
+.vip-upgrade-locked-wrapper-btn {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+}
+.vip-upgrade-locked-wrapper-btn-signin {
+    background-color: #19c719;
+    transition: all ease 0.2s;
+}
+.vip-upgrade-locked-wrapper-btn-signin:hover {
+    background-color: #19c719 !important;
+    opacity: 0.8;
+}
+/* .vip-upgrade-locked-wrapper-btn-signup {
+} */
+.vip-upgrade-locked-or {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    user-select: none;
+}
+
+.vip-upgrade-locked-forgot-password {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.vip-upgrade-locked-forgot-password-text {
+    color: #03a9f4;
+    cursor: pointer;
+}
+
+#embedded-payment-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+}
+
+/* Áp dụng tùy chỉnh scrollbar */
+#embedded-payment-container::-webkit-scrollbar {
+    width: 10px;
+}
+#embedded-payment-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+#embedded-payment-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+#embedded-payment-container::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}

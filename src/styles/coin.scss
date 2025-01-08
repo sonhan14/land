@@ -1,0 +1,129 @@
+.coin-input {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.decrease-coin-btn {
+    cursor: pointer;
+}
+
+.increase-coin-btn {
+    cursor: pointer;
+}
+
+.deposit-coin-total-price {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1.1rem;
+    span {
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+}
+
+.coin-button {
+    background-color: #000000;
+    color: #00ff00;
+    border: none;
+    padding: 8px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.coin-button.disabled {
+    pointer-events: none;
+}
+
+.coin-button:hover {
+    background-color: #333333;
+}
+
+.coin-button.disabled:hover {
+    pointer-events: none;
+    background-color: unset;
+    opacity: 0.8;
+}
+
+.coin-upgrade {
+    padding: 18px 4px;
+}
+
+.coin-upgrade-message {
+}
+
+.coin-upgrade-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.coin-upgrade-checkout {
+    display: flex;
+    justify-content: flex-end;
+}
+.coin-upgrade-locked {
+    padding: 18px 4px;
+}
+.coin-upgrade-locked-message {
+    text-align: center;
+    display: block;
+}
+.coin-upgrade-locked-wrapper-btn {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+}
+.coin-upgrade-locked-wrapper-btn-signin {
+    background-color: #19c719;
+    transition: all ease 0.2s;
+}
+.coin-upgrade-locked-wrapper-btn-signin:hover {
+    background-color: #19c719 !important;
+    opacity: 0.8;
+}
+/* .coin-upgrade-locked-wrapper-btn-signup {
+} */
+.coin-upgrade-locked-or {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    user-select: none;
+}
+
+.coin-upgrade-locked-forgot-password {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.coin-upgrade-locked-forgot-password-text {
+    color: #03a9f4;
+    cursor: pointer;
+}
+
+.coin-package-item {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+#embedded-payment-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: 9999;
+}

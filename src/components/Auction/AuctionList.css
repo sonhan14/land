@@ -1,0 +1,132 @@
+.auctions {
+    width: auto;
+}
+.auctions-list {
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: black;
+}
+.auctions-list-title {
+    font-weight: 400;
+    align-items: justify;
+    margin: 6px;
+}
+.auctions-list-time {
+    font-weight: 600;
+    font-size: 14px;
+    font-style: italic;
+    margin: 6px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+    color: #fff;
+}
+
+.pagination button {
+    background-color: #0bff28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #007bff;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.search-bar,
+.address-select {
+    width: 48%;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus,
+.address-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-bar {
+    margin-right: 4%;
+}
+
+.address-select {
+    margin-left: 4%;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 6px;
+}
+
+button:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.pagination button:hover {
+    background-color: #007bff;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+button.active {
+    background-color: #0bff28;
+}
+@media screen and (max-width: 767px) {
+    .search-bar{
+        font-size: 0.5em;
+    }
+    .button-style{
+        font-size: 0.5em;
+        
+    } 
+    .address-select{
+        font-size: 0.6em;
+    }
+    
+}

@@ -1,0 +1,15 @@
+.checkout {
+    height: 100vh;
+}
+.checkout-modal-content {
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 40px;
+}

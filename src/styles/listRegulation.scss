@@ -1,0 +1,131 @@
+/* Variables for consistent styling */
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$border-radius: 12px;
+$icon-size: 44px;
+
+/* -------------------------------------- */
+/* Styles for the list container */
+/* -------------------------------------- */
+.text-list {
+    padding: 0px 3px !important;
+    cursor: pointer;
+}
+.text-list:hover {
+    background-color: #888 !important;
+}
+.ant-list-item {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Bordered list styling */
+.ant-list-bordered {
+    border: none !important;
+}
+
+/* Text color for white text */
+.text-white {
+    color: white !important;
+}
+
+/* Styles for no data state in the list */
+.no-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #888;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Styles for list regulations */
+.list-regulations {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 10px;
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
+/* Styles for regulation list container */
+.list-wrapper-regulation {
+    max-height: 77vh;
+    padding: 7px;
+    z-index: 999;
+    width: 160px;
+    background-color: rgba(200, 200, 200, 0.1) !important;
+    position: fixed;
+    top: 120px;
+    right: 60px;
+    bottom: 0;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    margin-bottom: 10px;
+}
+
+/* Styles for icon wrapper */
+.icon-wrapper-regulation {
+    padding: 7px;
+    z-index: 999;
+    width: $icon-size;
+    background-color: #fff !important;
+    position: fixed;
+    top: 70px;
+    right: 65px;
+    bottom: 0;
+    box-shadow: $box-shadow;
+    height: $icon-size;
+    border-radius: 5px;
+}
+
+/* -------------------------------------- */
+/* Responsive styles for smaller devices */
+/* -------------------------------------- */
+@media (min-width: 576px) and (max-width: 768px) {
+    .list-wrapper-regulation {
+        top: 126px;
+        right: 53px;
+        max-height: 60vh;
+    }
+
+    .icon-wrapper-regulation {
+        top: 175px;
+        right: 65px;
+    }
+}
+
+@media (max-width: 600px) {
+    .list-wrapper-regulation {
+        top: 165px;
+        right: 53px;
+        max-height: 60vh;
+    }
+
+    .icon-wrapper-regulation {
+        top: 115px;
+        right: 65px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .list-wrapper-regulation {
+        top: 126px;
+        right: 53px;
+        max-height: 50vh;
+    }
+
+    .icon-wrapper-regulation {
+        top: 68px;
+        right: 65px;
+    }
+}

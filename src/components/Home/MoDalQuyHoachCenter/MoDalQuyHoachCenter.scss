@@ -1,0 +1,84 @@
+.ant-modal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.modal-content {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 16px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+
+    scrollbar-width: none;
+
+    ul {
+        list-style: none;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            width: 100%;
+            margin-bottom: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .item-text {
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    .item-text-info {
+        font-size: 14px;
+        color: black;
+        font-weight: 400;
+    }
+
+}
+
+.list-item {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e1e6ea;
+    /* Màu xanh làm nổi bật */
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+        background-color: #e6f7ff;
+        transform: scale(1.05);
+        /* Phóng to nhẹ khi hover */
+    }
+
+
+}
